@@ -15,14 +15,14 @@ const ExpenseList = () => {
                 </tr>
             </thead>
             <tbody>
-                {expenses.map((expense) => {
+                {expenses.map((expense) => (
                     <ExpenseItem
                         id={expense.id}
                         key={expense.id}
                         name={expense.name}
                         cost={expense.cost}
                     />
-                })}
+                ))}
             </tbody>
         </table>
     );
